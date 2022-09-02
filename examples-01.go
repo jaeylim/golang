@@ -11,7 +11,7 @@ func main() {
 */
 
 //02.multiple input
-package main
+/*package main
 import "fmt"
 
 func main() {
@@ -21,4 +21,22 @@ func main() {
 	fmt.Print("Enter your name & are you a muggle: ")
 	fmt.Scanf("%s %t",&name, &is_muggle)
 	fmt.Println(name, is_muggle)
+}
+*/
+
+//03.multiple input_err,count examples
+package main
+import "fmt"
+
+func main(){
+	var a string
+	var b int
+
+	fmt.Print("Enter a string and integer: ")
+	count, err := fmt.Scanf("%s %d",&a, &b)
+
+	fmt.Println("count: ", count)
+	fmt.Println("err: ", err)
+	fmt.Println("string: ", a)
+	fmt.Println("integer: ", b)
 }
